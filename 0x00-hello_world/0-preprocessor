@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="your_c_file.c" OUTPUT_FILE="c" && { cpp "$CFILE" > "$OUTPUT_FILE" 2>/dev/null && echo "Preprocessed output saved to $OUTPUT_FILE"; } || echo "Failed to preprocess the C file."
+CFILE="0-main.c" && OUTPUT_FILE="output.txt" && { cpp "$CFILE" > "$OUTPUT_FILE" 2>/dev/null && cat "$OUTPUT_FILE"; } || echo "Failed to preprocess the C file."
