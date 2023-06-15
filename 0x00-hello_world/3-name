@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="3-main.c"; gcc "$CFILE" -o cisfun >/dev/null 2>&1 && echo "cisfun" || echo "Compilation failed."
+export CFILE="3-main.c" ; gcc "$CFILE" -o cisfun && ./cisfun
