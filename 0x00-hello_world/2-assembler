@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="2-main.c" && OUTPUT_FILE="${CFILE%.c}.s" && gcc -S "$CFILE" -o "$OUTPUT_FILE" && cat "$OUTPUT_FILE"
+export CFILE=main.c; OUTPUT_FILE="${CFILE%.c}.s"; gcc -S "$CFILE" -o "$OUTPUT_FILE"; cat "$OUTPUT_FILE"
