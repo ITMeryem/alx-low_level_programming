@@ -1,20 +1,24 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
-int main() {
-// Seed the random number generator with the current time
-std::srand(static_cast<unsigned int>(std::time(nullptr)));
-// Generate a random number between -100 and 100
-int n = std::rand() % 201 - 100;
-// Print the generated number
-std::cout << "The number is: " << n << std::endl;
-// Check if the number is positive, negative, or zero
-if (n > 0) {
-std::cout << "is positive" << std::endl;
-} else if (n < 0) {
-std::cout << "is negative" << std::endl;
-} else {
-std::cout << "is zero" << std::endl;
-}
-return 0;
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main - Entry point of the program
+ *
+ * Description: This program generates a random number
+ * and determines whether it is positive, negative, or zero.
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+srand((unsigned int)time(NULL));
+int n = rand() % 201 - 100;
+printf("The number is: %d\n", n);
+if (n > 0)
+printf("is positive\n");
+else if (n < 0)
+printf("is negative\n");
+else
+printf("is zero\n");
+return (0);
 }
