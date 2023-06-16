@@ -13,18 +13,14 @@
 int main(void)
 {
 	int n;
-	srand((unsigned int)time(NULL));
-	// Generate a random number between -100 and 100
-	n = rand() % 201 - 100;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 	printf("The number is: %d\n", n);
 	if (n > 0)
-	{
-		n = 98; // Assign 98 if the number is positive
-		printf("%d is positive\n", n);
-	}
+		printf("is positive\n");
 	else if (n < 0)
-		printf("%d is negative\n", n);
+		printf("is negative\n");
 	else
-		printf("0 is zero\n");
+		printf("is zero\n");
 	return (0);
 }
