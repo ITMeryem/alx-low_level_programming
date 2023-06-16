@@ -11,14 +11,15 @@
  */
 int main(void)
 {
-srand((unsigned int)time(NULL));
-int n = rand() % 201 - 100;
-printf("The number is: %d\n", n);
-if (n > 0)
-printf("is positive\n");
-else if (n < 0)
-printf("is negative\n");
-else
-printf("is zero\n");
-return (0);
+	int n;
+	srand((unsigned int)time(NULL));
+	n = rand() % 201 - 100;
+	printf("The number is: %d\n", n);
+	if (n > 0)
+		printf("is positive\n");
+	else if (n < 0)
+		printf("is negative\n");
+	else
+		printf("is zero\n");
+	return (0);
 }
