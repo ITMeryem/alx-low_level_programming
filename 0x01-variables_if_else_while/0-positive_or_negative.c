@@ -14,13 +14,17 @@ int main(void)
 {
 	int n;
 	srand((unsigned int)time(NULL));
+
 	n = rand() % 201 - 100;
+
 	printf("The number is: %d\n", n);
+
 	if (n > 0)
-		printf("is positive\n",n);
+		printf("%d is positive\n", n);
 	else if (n < 0)
-		printf("is negative\n",n);
+		printf("%d is negative\n", n);
 	else
-		printf("is zero\n");
+		printf("0 is zero\n");
+
 	return (0);
 }
