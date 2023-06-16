@@ -22,8 +22,7 @@ int main(void)
 
 	if (n < 0)
 		lastDigit *= -1;
-	
-    printf("%d and is ", lastDigit);
+	printf("%d and is ", lastDigit);
 
 	if (lastDigit > 5)
 		printf("greater than 5\n");
