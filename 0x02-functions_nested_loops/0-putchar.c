@@ -1,4 +1,6 @@
 #include "main.h"
+#include <unistd.h>  /* Include the <unistd.h> header for the write function */
+
 /**
  * main - Entry point
  *
@@ -18,6 +20,7 @@ int main(void)
 
 	return (0);
 }
+
 /**
  * _putchar - Writes a character to the standard output (stdout)
  *
@@ -30,3 +33,4 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
