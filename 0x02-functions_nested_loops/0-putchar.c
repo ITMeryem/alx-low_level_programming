@@ -1,25 +1,5 @@
 #include "main.h"
-#include <unistd.h>  /* Include the <unistd.h> header for the write function */
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
-int main(void)
-{
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-
-	return (0);
-}
+#include <unistd.h>
 
 /**
  * _putchar - Writes a character to the standard output (stdout)
@@ -33,4 +13,3 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-
